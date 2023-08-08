@@ -1,0 +1,76 @@
+---
+type: tutorial
+title: Armazene o seu repositório online
+description: |-
+  Tutorial: Construa o seu primeiro blog com Astro —
+  Crie um repositório no GitHub para o seu projeto do tutorial
+i18nReady: true
+---
+import Badge from '~/components/Badge.astro';
+import Checklist from '~/components/Checklist.astro';
+import Box from '~/components/tutorial/Box.astro';
+import PreCheck from '~/components/tutorial/PreCheck.astro';
+
+
+
+<PreCheck>
+  - Coloque o seu repositório do projeto online
+</PreCheck>
+
+Este tutorial usará o GitHub para armazenar o nosso repositório e conectar-se a um host na web. Você é bem-vindo(a) a usar o provedor git online de sua escolha.
+
+:::note
+Se você já está familiarizado(a) com o git e tem o seu próprio fluxo de trabalho, crie um novo repositório no GitHub para o seu projeto usando o método de sua preferência. Vá para a próxima página: ["Implante o seu site na web"](/pt-br/tutorial/1-setup/5/).
+:::
+
+## Crie um repositório no GitHub
+
+Embora existam algumas maneiras de colocar o seu código local no GitHub, este tutorial irá guiá-lo(a) por um método que não requer o uso do git na linha de comando.
+
+1. Faça login no GitHub.com em um navegador e clique no <kbd>+</kbd> no canto superior direito da tela para criar um novo repositório.
+
+2. Escolha um nome para o seu repositório. Este não precisa ser o mesmo nome da pasta do seu projeto.
+
+3. Você será apresentado(a) com opções, mas não precisa alterar nenhum dos valores padrão. Role a página para baixo e clique no botão para <kbd>Criar repositório</kbd>.
+
+4. Você verá várias etapas de configuração, mas você não precisará usar nenhuma delas. Anote a URL do seu repositório. Agora você pode sair dessa página sem fazer mais nada.
+
+
+## Faça o commit do seu código local no GitHub
+
+Na última seção, você fez uma alteração no conteúdo da sua página. Isso significa que os arquivos do seu projeto foram alterados, e o VS Code deve mostrar um número acima do ícone do menu "Source". Essa aba de origem é onde você irá regularmente para atualizar os seus arquivos no GitHub.
+
+
+1. Clique na guia Source Control no seu VS Code para ver uma lista de arquivos que foram alterados. Se você vir uma mensagem informando que você precisa instalar o `git`, siga as instruções fornecidas e, em seguida, recarregue o VS Code.
+
+2. Clique no menu <kbd>•••</kbd> "3 pontos" acima da mensagem de commit e escolha <kbd>Remoto</kbd> > <kbd>Adicionar remoto</kbd>.
+
+3. Selecione <kbd>Adicionar remoto do GitHub</kbd>. Se necessário, siga as etapas de autenticação e depois retorne ao VS Code e repita esta ação.
+
+4. Você deverá ver uma lista de todos os seus repositórios no GitHub. Escolha aquele que você criou para este projeto. Se você não ver o seu projeto, cole diretamente a URL do GitHub dele. Você também poderá ser solicitado(a) a dar um nome local para este repositório. Você pode escolher qualquer nome que você goste.
+
+5. Na parte superior do painel de menu, haverá um espaço para digitar uma **mensagem de commit** (descrição das alterações dos seus arquivos). Digite `initial commit` e pressione o botão <kbd>Commit</kbd> para fazer o commit dessas alterações.
+
+7. Você pode ver uma mensagem informando que você não tem commits "staged" e perguntando se você quer adicionar ao stage. Clique em <kbd>Always</kbd> e continue.
+
+8. Por fim, a lista de arquivos alterados deve ser substituída por um botão <kbd>Publicar</kbd>. Clique nele para enviar as suas alterações para o GitHub.
+
+
+### Veja o seu projeto no GitHub
+
+Para verificar que o seu projeto foi armazenado com sucesso no GitHub, visite o GitHub.com e procure sob a sua conta por uma lista de seus repositórios. Escolha o novo que você criou e verifique que ele contém os arquivos do seu projeto Astro.
+
+
+
+
+<Box icon="check-list">
+## Lista de verificação
+
+<Checklist>
+- [ ] Eu armazenei o meu projeto no GitHub.
+</Checklist>
+</Box>
+
+### Recursos
+
+- <p>[Usando o Controle de Versão Git no VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview#_git-support) <Badge>external</Badge></p>

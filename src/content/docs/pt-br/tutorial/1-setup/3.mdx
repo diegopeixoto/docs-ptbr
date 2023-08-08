@@ -1,0 +1,71 @@
+---
+type: tutorial
+title: Escreva sua primeira linha de código Astro
+description: |-
+  Tutorial: Construa o seu primeiro blog com Astro —
+  Faça suas primeiras edições na página inicial do projeto do tutorial
+i18nReady: true
+---
+import Badge from '~/components/Badge.astro';
+import Checklist from '~/components/Checklist.astro';
+import Box from '~/components/tutorial/Box.astro';
+import InstallGuideTabGroup from '~/components/TabGroup/InstallGuideTabGroup.astro';
+import PackageManagerTabs from '~/components/tabs/PackageManagerTabs.astro';
+import PreCheck from '~/components/tutorial/PreCheck.astro';
+
+
+
+<PreCheck>
+  - Faça a sua primeira edição no seu novo website
+</PreCheck>
+
+## Edite a sua página inicial
+
+1. No seu editor de código, navegue no painel de arquivos do Explorer até `src/pages/index.astro` e clique para abrir o conteúdo do arquivo em uma aba editável.
+
+    O conteúdo do seu arquivo `index.astro` deve estar assim:
+
+    ```astro title="src/pages/index.astro"
+    ---
+    ---
+
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} >
+        <title>Astro</title>
+      </head>
+      <body>
+        <h1>Astro</h1>
+      </body>
+    </html>
+    ```
+
+2. Edite o conteúdo da sua tag `<body>`.
+
+    Digite no editor para alterar o texto do cabeçalho da sua página e salve a alteração.
+
+    ```astro title="src/pages/index.astro" del={2} ins={3}
+    <body>
+      <h1>Astro</h1>
+      <h1>Meu Site Astro</h1>
+    </body>
+    ```
+
+3. Verifique a prévia no navegador e você verá o conteúdo da sua página atualizado com o novo texto.
+
+Parabéns! Agora você é um desenvolvedor Astro!
+
+O restante desta unidade irá prepará-lo para o sucesso com controle de versão e um site publicado que você pode exibir.
+
+
+<Box icon="check-list">
+## Lista de verificação
+
+<Checklist>
+- [ ] Eu posso fazer alterações e vê-las no navegador.
+- [ ] Eu sou um desenvolvedor Astro!
+</Checklist>
+</Box>

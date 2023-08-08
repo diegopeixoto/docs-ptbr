@@ -1,0 +1,85 @@
+---
+type: tutorial
+title: Implante o seu site na web
+description: |-
+  Tutorial: Construa o seu primeiro blog com Astro —
+  Conecte o repositório do seu projeto do tutorial no GitHub ao Netlify e implante na web
+i18nReady: true
+---
+import Badge from '~/components/Badge.astro';
+import Checklist from '~/components/Checklist.astro';
+import Box from '~/components/tutorial/Box.astro';
+import MultipleChoice from '~/components/tutorial/MultipleChoice.astro';
+import Option from '~/components/tutorial/Option.astro';
+import PreCheck from '~/components/tutorial/PreCheck.astro';
+
+
+
+<PreCheck>
+  - Adicione o seu repositório do GitHub como um novo aplicativo Netlify
+  - Implante o seu site Astro na web
+</PreCheck>
+
+Aqui, você irá conectar o seu repositório do GitHub ao Netlify. O Netlify usará esse projeto para construir e implantar o seu site ao vivo na web toda vez que você fizer um commit em uma alteração no seu código.
+
+:::tip[Nós usaremos...]
+Este tutorial usará o **Netlify**, mas você é bem-vindo(a) a usar o serviço de hospedagem de sua preferência para implantar o seu site na internet.
+:::
+
+## Crie um novo site no Netlify
+
+1. Crie uma conta gratuita no [Netlify](https://netlify.com) se você ainda não tiver uma.
+
+    Anote o seu nome de usuário. Você visualizará o seu painel e qualquer site que criar em `https://app.netlify.com/teams/username`
+
+2. Clique em <kbd>Adicionar novo site</kbd> > <kbd>Importar um projeto existente</kbd>.
+
+    Você será solicitado(a) a conectar-se a um provedor Git. Escolha o GitHub e siga as etapas na tela para autenticar a sua conta do GitHub. Em seguida, escolha o repositório do seu projeto Astro no GitHub a partir da lista fornecida.
+
+3. Na etapa final, o Netlify irá mostrar as configurações do site do seu aplicativo. As configurações padrão devem estar corretas para o seu projeto Astro, então você pode rolar a página para baixo e clicar em <kbd>Implantar site</kbd>.
+
+Parabéns, você tem um site Astro!
+
+## Mude o nome do seu projeto
+
+Na página de visão geral do seu site no Netlify, você verá o nome do seu projeto gerado aleatoriamente e a URL do seu site com o formato `https://project-name-123456.netlify.app`. Você pode mudar o nome do seu projeto para algo mais memorável, e isso atualizará automaticamente a sua URL.
+
+## Visite o seu novo site
+
+Clique na URL nas configurações do seu site ou digite-a em uma janela do navegador para ver o seu novo site.
+
+
+
+<Box icon="question-mark">
+
+### Teste o seu conhecimento
+
+
+
+Você deseja atualizar a página inicial do seu site existente. Quais etapas você deve seguir?
+
+  <MultipleChoice>
+    <Option>
+      Eu abro um terminal, executo `create astro` e, em seguida, visito a minha URL do Netlify.
+    </Option>
+    <Option>
+      Eu mudo uma configuração no meu aplicativo Netlify e, em seguida, crio um novo projeto Astro no StackBlitz.
+    </Option>
+    <Option isCorrect>
+      Eu faço uma edição em `index.astro`. Faço o commit e o push das minhas alterações no GitHub. O Netlify cuidará do resto!
+    </Option>
+  </MultipleChoice>
+ </Box>
+
+<Box icon="check-list">
+## Lista de verificação
+
+<Checklist>
+- [ ] Eu posso ver o meu site atualizado online.
+- [ ] Estou pronto(a) para voltar a programar!
+</Checklist>
+</Box>
+
+### Recursos
+
+- <p>[Um guia passo a passo para implantar no Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) <Badge>external</Badge></p>
